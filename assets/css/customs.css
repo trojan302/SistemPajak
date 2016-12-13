@@ -1,0 +1,14 @@
+/* Line Height */
+.lh{line-height: 20px;}.lh-1{line-height: 30px;}.lh-2{line-height: 40px;}
+
+/* Margin */
+.mt-10{margin-top: 10px;}.mt-15{margin-top: 15px;}.mt-20{margin-top: 20px;}.mt-25{margin-top: 25px;}.mt-30{margin-top: 30px;}
+.ml-10{margin-left: 10px;}.ml-15{margin-left: 15px;}.ml-20{margin-left: 20px;}.ml-25{margin-left: 25px;}.ml-30{margin-left: 30px;}
+.mr-10{margin-right: 10px;}.mr-15{margin-right: 15px;}.mr-20{margin-right: 20px;}.mr-25{margin-right: 25px;}.mr-30{margin-right: 30px;}
+.mb-10{margin-bottom: 10px;}.mb-15{margin-bottom: 15px;}.mb-20{margin-bottom: 20px;}.mb-25{margin-bottom: 25px;}.mb-30{margin-bottom: 30px;}
+/* Form Group */
+.g-form{clear: both;}.g-input{float: left;border-top-right-radius:5px;border-bottom-right-radius:5px;border:1px solid darkgrey;padding:2px 10px;margin-right: 10px;outline: none;}.g-icon{padding:6.5px 15px;border-top-left-radius:5px;border-bottom-left-radius:5px;background-color:darkgrey;float: left;}
+.g-input-l{float: left;border-top-right-radius:5px;border-bottom-right-radius:5px;border:1px solid darkgrey;padding:2px 10px;margin-right: 10px;outline: none;width: 30%;}
+.g-input-xl{float: left;border-top-right-radius:5px;border-bottom-right-radius:5px;border:1px solid darkgrey;padding:2px 10px;margin-right: 10px;outline: none;width: 35%;}
+.g-input-xxl{float: left;border-top-right-radius:5px;border-bottom-right-radius:5px;border:1px solid darkgrey;padding:2px 10px;margin-right: 10px;outline: none;width: 40%;}
+.g-input-j{float: left;border-top-right-radius:5px;border-bottom-right-radius:5px;border:1px solid darkgrey;padding:2px 10px;margin-right: 10px;outline: none;width: 80%;}

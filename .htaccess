@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond $1 !^(index\.php)
+RewriteRule ^login/([^/\.]+)/?$ login.php?type=view&data=$1 [L]
+RewriteRule ^error/([^/\.]+)/?$ error.php?type=view&data=$1 [L]
+RewriteRule ^index/([^/\.]+)/?$ index.php?type=view&data=$1 [L]
+RewriteRule ^logAuth/([^/\.]+)/?$ logAuth.php?type=view&data=$1 [L]
+RewriteRule ^logout/([^/\.]+)/?$ logout.php?type=view&data=$1 [L]
