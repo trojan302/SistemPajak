@@ -278,7 +278,7 @@ ob_start();
 	if (isset($_POST['warungMakan']) != '' || isset($_POST['masaWM']) != '' || isset($_POST['nominalWM']) != '') {
 		
 
-		$Parkir = array(
+		$Warung = array(
 
 			'Nama' => $_POST['warungMakan'],
 			'Masa' => $_POST['masaWM'],
@@ -297,19 +297,19 @@ ob_start();
 		</thead>
 		<tbody>
 		<tr><td>';
-		foreach ($Parkir["Nama"] as $dataw) {
+		foreach ($Warung["Nama"] as $dataw) {
 			
 			echo $dataw ."<br><br>";
 
 		}
 		echo "</td><td>";
-		foreach ($Parkir["Masa"] as $dataw1) {
+		foreach ($Warung["Masa"] as $dataw1) {
 			
 			echo $dataw1 ."<br><br>";
 
 		}
 		echo "</td><td style='text-align:right;'>";
-		foreach ($Parkir["Nominal"] as $data2) {
+		foreach ($Warung["Nominal"] as $data2) {
 			
 			echo "Rp. ".number_format($data2) ."<br><br>";
 
@@ -322,7 +322,7 @@ ob_start();
 	if (isset($_POST['pajakRestoran']) != '' || isset($_POST['masaRestoran']) != '' || isset($_POST['nominalRestoran']) != '') {
 		
 
-		$Parkir = array(
+		$Restoran = array(
 
 			'Nama' => $_POST['pajakRestoran'],
 			'Masa' => $_POST['masaRestoran'],
@@ -341,21 +341,153 @@ ob_start();
 		</thead>
 		<tbody>
 		<tr><td>';
-		foreach ($Parkir["Nama"] as $datar) {
+		foreach ($Restoran["Nama"] as $datar) {
 			
 			echo $datar ."<br><br>";
 
 		}
 		echo "</td><td>";
-		foreach ($Parkir["Masa"] as $datar1) {
+		foreach ($Restoran["Masa"] as $datar1) {
 			
 			echo $datar1 ."<br><br>";
 
 		}
 		echo "</td><td style='text-align:right;'>";
-		foreach ($Parkir["Nominal"] as $datar2) {
+		foreach ($Restoran["Nominal"] as $datar2) {
 			
 			echo "Rp. ".number_format($datar2) ."<br><br>";
+
+		}
+		echo "</td></tr></tbody></table>";
+
+	}
+
+	// Pajak Reklame
+	if (isset($_POST['pajakReklame']) != '' || isset($_POST['masaReklame']) != '' || isset($_POST['nominalReklame']) != '') {
+		
+
+		$Reklame = array(
+
+			'Nama' => $_POST['pajakReklame'],
+			'Masa' => $_POST['masaReklame'],
+			'Nominal'  => $_POST['nominalReklame']
+
+		);
+
+		echo '<table class="table-all small">
+		<caption class="left-align"><b>Pajak Reklame</b></caption>
+		<thead>
+			<tr style="background-color: lightgrey;">
+				<th>Nama Wajib pajak</th>
+				<th>Masa Pajak</th>
+				<th>Nominal Pajak</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr><td>';
+		foreach ($Reklame["Nama"] as $datark) {
+			
+			echo $datark ."<br><br>";
+
+		}
+		echo "</td><td>";
+		foreach ($Reklame["Masa"] as $datark1) {
+			
+			echo $datark1 ."<br><br>";
+
+		}
+		echo "</td><td style='text-align:right;'>";
+		foreach ($Reklame["Nominal"] as $datark2) {
+			
+			echo "Rp. ".number_format($datark2) ."<br><br>";
+
+		}
+		echo "</td></tr></tbody></table>";
+
+	}
+
+	// Pajak Hiburan
+	if (isset($_POST['pajakHiburan']) != '' || isset($_POST['masaHiburan']) != '' || isset($_POST['nominalHiburan']) != '') {
+		
+
+		$Hiburan = array(
+
+			'Nama' => $_POST['pajakHiburan'],
+			'Masa' => $_POST['masaHiburan'],
+			'Nominal'  => $_POST['nominalHiburan']
+
+		);
+
+		echo '<table class="table-all small">
+		<caption class="left-align"><b>Pajak Hiburan</b></caption>
+		<thead>
+			<tr style="background-color: lightgrey;">
+				<th>Nama Wajib pajak</th>
+				<th>Masa Pajak</th>
+				<th>Nominal Pajak</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr><td>';
+		foreach ($Hiburan["Nama"] as $datah) {
+			
+			echo $datah ."<br><br>";
+
+		}
+		echo "</td><td>";
+		foreach ($Hiburan["Masa"] as $datah1) {
+			
+			echo $datah1 ."<br><br>";
+
+		}
+		echo "</td><td style='text-align:right;'>";
+		foreach ($Hiburan["Nominal"] as $datah2) {
+			
+			echo "Rp. ".number_format($datah2) ."<br><br>";
+
+		}
+		echo "</td></tr></tbody></table>";
+
+	}
+
+	// Pajak Tanah
+	if (isset($_POST['pajakTanah']) != '' || isset($_POST['masaTanah']) != '' || isset($_POST['nominalTanah']) != '') {
+		
+
+		$Tanah = array(
+
+			'Nama' => $_POST['pajakTanah'],
+			'Masa' => $_POST['masaTanah'],
+			'Nominal'  => $_POST['nominalTanah']
+
+		);
+
+		echo '<table class="table-all small">
+		<caption class="left-align"><b>Pajak Tanah</b></caption>
+		<thead>
+			<tr style="background-color: lightgrey;">
+				<th>Nama Wajib pajak</th>
+				<th>Masa Pajak</th>
+				<th>Nominal Pajak</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr><td>';
+		foreach ($Tanah["Nama"] as $datat) {
+			
+			echo $datat ."<br><br>";
+
+		}
+		echo "</td><td>";
+		foreach ($Tanah["Masa"] as $datat1) {
+			
+			echo $datat1 ."<br><br>";
+
+		}
+		echo "</td><td style='text-align:right;'>";
+		foreach ($Tanah["Nominal"] as $datat2) {
+			
+			echo "Rp. ".number_format($datat2) ."<br><br>";
 
 		}
 		echo "</td></tr></tbody></table>";
