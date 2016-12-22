@@ -12,3 +12,67 @@
 .g-input-xl{float: left;border-top-right-radius:5px;border-bottom-right-radius:5px;border:1px solid darkgrey;padding:2px 10px;margin-right: 10px;outline: none;width: 35%;}
 .g-input-xxl{float: left;border-top-right-radius:5px;border-bottom-right-radius:5px;border:1px solid darkgrey;padding:2px 10px;margin-right: 10px;outline: none;width: 40%;}
 .g-input-j{float: left;border-top-right-radius:5px;border-bottom-right-radius:5px;border:1px solid darkgrey;padding:2px 10px;margin-right: 10px;outline: none;width: 80%;}
+#namaPegawai, #pajakHotel{
+      margin:5px 5px;
+    }
+    .display input{
+      margin:5px;
+    }
+    .display{
+      width: 100%; 
+    }
+    .display2 input{
+      margin:5px 0px;
+    }
+    .display2{
+      width: 100%;
+    }
+    .display3 input{
+      margin:5px 0px;
+    }
+    .display3{
+      width: 100%;
+    }
+    .display4 input{
+      margin:5px 0px;
+    }
+    .display4{
+      width: 100%;
+    }
+    .display5 input{
+      margin:5px 0px;
+    }
+    .display5{
+      width: 100%;
+    }
+    .display6 input{
+      margin:5px 0px;
+    }
+    .display6{
+      width: 100%;
+    }
+    .display7 input{
+      margin:5px 0px;
+    }
+    .display7{
+      width: 100%;
+    }
+    .display8 input{
+      margin:5px 0px;
+    }
+    .display8{
+      width: 100%;
+    }
+    .input{
+      width: 60%;
+    }
+    .td-input{
+      width: 100%;
+      padding: 2px;
+    }
+    .c-table{
+    	width: 100%;
+    	padding: 3px;
+    	border: 1px solid grey;
+    	background-color: lightgrey;
+    }

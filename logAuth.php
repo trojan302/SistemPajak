@@ -8,12 +8,12 @@ if(isset($_POST['login']))
 	$uname 	= $_POST['uname'];
 	$pass 	= md5($_POST['pass']);
 
-	$users 	= $db->query("SELECT * FROM users WHERE username='$uname' AND password='$pass' ");
-	$data 	= $users->fetch_assoc();
+	// $users 	= $db->query("SELECT * FROM users WHERE username='$uname' AND password='$pass' ");
+	// $data 	= $users->fetch_assoc();
 
-	if ($uname == $data['username'] && $pass == $data['password']) {
+	if ($uname == 'admin' && $pass == md5('admin')) {
 		
-		$_SESSION['username'] = $data['username'];
+		$_SESSION['username'] = 'admin';
 		
 		echo "<meta http-equiv='refresh' content='0; url=$hosted' />";
 
