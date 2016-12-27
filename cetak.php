@@ -55,6 +55,8 @@ ob_start();
 		@page {
 			margin: 2% 4%;
 		}
+		.gr-1{padding:1px;background-color: black;margin-bottom: 2px;}
+		.gr-2{padding:2px;background-color: black;}
 	</style>
 </head>
 <body>
@@ -494,7 +496,26 @@ ob_start();
 
 	}
 
+	if(isset($_POST['nominalHiburan'])){$jmlHiburan = array_sum($_POST['nominalHiburan']);}
+	if(isset($_POST['nominalPajak'])){$jmlHotel = array_sum($_POST['nominalPajak']);}
+	if(isset($_POST['nominalTanah'])){$jmlTanah = array_sum($_POST['nominalTanah']);}
+	if(isset($_POST['nominalParkir'])){$jmlParkir = array_sum($_POST['nominalParkir']);}
+	if(isset($_POST['nominalWM'])){$jmlWM = array_sum($_POST['nominalWM']);}
+	if(isset($_POST['nominalRestoran'])){$jmlRestoran = array_sum($_POST['nominalRestoran']);}
+	if(isset($_POST['nominalReklame'])){$jmlReklame = array_sum($_POST['nominalReklame']);}
+
+
+	$data = array($jmlHiburan,$jmlHotel,$jmlTanah,$jmlParkir,$jmlWM,$jmlRestoran,$jmlReklame);
+	$jml = array_sum($data);
+
 	?>
+
+	<table class="table-all small">
+		<tr>
+			<th colspan="2" style="text-align: center;">Total Penarikan Pajak</th>
+			<td style="text-align: right;">Rp. <?= number_format($jml); ?></td>
+		</tr>
+	</table>
 
 	<p>Yang melaporkan :</p>
 	<?php
